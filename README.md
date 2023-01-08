@@ -9,7 +9,7 @@
 ### 📅 프로젝트 기간
 - 2022.09.08~2022.10.14 (약 1개월)
 
-### 🖇 사용 데이터
+### 🖇 사용 데이터  
 - 기본 제공 데이터
   - 제주지역 비거주자의 제주지역 매출기준 상위가맹점 데이터
   - 신한카드 올댓여행 렌터카 상위차종 데이터
@@ -28,24 +28,25 @@
   - 네이버맵 크롤링 데이터
 
 ## 2. 코드 순서
-- 0. 데이터 구축
+#### 0. 데이터 구축
   - 0-1. VISITJEJU_CRAWLING.ipynb : 비짓제주 크롤링 코드
   - 0-2. VEGANMAP_CRAWLING.ipynb: 제주비건지도 크롤링 코드
   - 0-3. TRIPADVISER_MYREALTRIP_CRAWLING.ipynb : 트립어드바이저/마이리얼트립 숙박정보 크롤링 코드
   - 0-4. RENTCAR_CRAWLING.ipynb: 올댓여행렌터카/엔젤렌터카 크롤링 코드
-  - 0-5. NAVERMAP_CRAWLING.ipynb:네이버맵 크롤링코드 (데이터 보완을 위해 추가적으로 전처리 데이터 검색 크롤링 코드- 전처리 과정 중 나오는 데이터셋 사용하여 코드와 함께 data 폴더에 정리)
+  - 0-5. NAVERMAP_CRAWLING.ipynb:네이버맵 크롤링코드
+  (데이터 보완을 위해 추가적으로 전처리 데이터 검색 크롤링 코드- 전처리 과정 중 나오는 데이터셋 사용하여 코드와 함께 data 폴더에 정리)
 
-- 1. 공통 전처리
+#### 1. 공통 전처리
   - 1-0. CO2_VISITJEJULOG_PREPROCESSING.ipynb :  지번주소 단위 온실가스 배출량 데이터와 비짓제주 조회데이터 전처리 코드로 향후 모든 데이터셋 전처리에서 활용할 예정
 
-- 2. 영역별 전처리
+#### 2. 영역별 전처리
   - 2-1. ACCOMMODATION_PREPROCESSING.ipynb : 숙박데이터셋 전처리 코드
   - 2-2. F&B_PREPROCESSING.ipynb : F&B데이터셋 전처리 코드
   - 2-3. TOUR_PREPROCESSING.ipynb : 관광지 데이터셋 전처리 코드 
   - 2-4. SHOP_PREPROCESSING.ipynb : 쇼핑 데이터셋 전처리 코드
   - 2-5. TRAFFIC_PREPROCESSING.ipynb : 교통 데이터셋 전처리 코드
 
-- 3. 추천 점수 산정
+#### 3. 추천 점수 산정
   - 3-1. F&B_RECOMMEND_GRADE.ipynb : F&B 추천점수 산정 코드
   - 3-2 JEJU_ZONE_DIVISION.ipynb : 클러스터링 통해 제주 구역 세분화 코드
   - 3-3 TOUR_SIMILARITY_CALCULATION.ipynb : 관광지 벡터 생성 및 유사도 계산 코드
